@@ -5,13 +5,17 @@ import { WebpackPlugin } from '@electron-forge/plugin-webpack';
 
 import { mainConfig } from './webpack.main.config';
 import { rendererConfig } from './webpack.renderer.config';
+import MakerDMG from '@electron-forge/maker-dmg';
+import MakerDeb from '@electron-forge/maker-deb';
 
 const config: ForgeConfig = {
   packagerConfig: {},
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({}),
-    new MakerZIP({})
+    new MakerZIP({}),
+    new MakerDMG({}),
+    new MakerDeb({})
   ],
   plugins: [
     new WebpackPlugin({
