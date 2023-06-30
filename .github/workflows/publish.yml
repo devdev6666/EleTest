@@ -22,4 +22,4 @@ jobs:
       - name: build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: "yarn electron-forge publish --platform=win32,linux,darwin"
+        run: "yarn electron-forge publish --platform=win32 linux darwin"
