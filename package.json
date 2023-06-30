@@ -11,9 +11,9 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/devdev6666/EleTest",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/devdev6666/EleTest"
   },
   "repository": {
     "type": "git",
@@ -229,8 +229,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "devdev6666",
+      "repo": "EleTest"
     }
   },
   "collective": {
