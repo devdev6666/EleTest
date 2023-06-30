@@ -11,7 +11,14 @@ import { rendererConfig } from './webpack.renderer.config';
 const config: ForgeConfig = {
   packagerConfig: {},
   rebuildConfig: {},
-  makers: [new MakerSquirrel({}), new MakerZIP({}, ['windows', 'darwin']), new MakerRpm({}), new MakerDeb({})],
+  makers: [
+    {
+      name: "@electron-forge/maker-zip"
+    },
+    {
+      name: "@electron-forge/maker-squirrel"
+    }
+  ],
   plugins: [
     new WebpackPlugin({
       mainConfig,
